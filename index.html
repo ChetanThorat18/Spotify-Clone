@@ -11,6 +11,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--Google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <!-- Spotify Fevicon -->
     <link rel="icon" href="/Assets/logo.png" />
     <link rel="stylesheet" href="style.css" />
@@ -61,7 +70,11 @@
               <button class="badge">Browse podcasts</button>
             </div>
           </div>
+          <div class="about">
+            <p>Made with &#9829 by Chetan</p>
+          </div>
         </div>
+
       </div>
       <!--Main Content -->
       <div class="main-content">
@@ -95,23 +108,23 @@
         <div class="cards-container">
           <div class="card">
             <img src="/Assets/card2img.jpeg" class="card-img" />
-            <p class="card-title">Top 50 - Global</p>
-            <p class="card-info">Your daily updates of most played...</p>
+            <p class="card-title">Mahiye Jinna Sohna</p>
+            <p class="card-info">Darshan Raval</p>
           </div>
           <div class="card">
-            <img src="/Assets/card3img.jpeg" class="card-img" />
-            <p class="card-title">Top 50 - Global</p>
-            <p class="card-info">Your daily updates of most played...</p>
+            <img src="/Assets/maan-meri-jaan.jpg" class="card-img" />
+            <p class="card-title">Maan Meri Jaan</p>
+            <p class="card-info">King</p>
           </div>
           <div class="card">
-            <img src="/Assets/card4img.jpeg" class="card-img" />
-            <p class="card-title">Top 50 - Global</p>
-            <p class="card-info">Your daily updates of most played...</p>
+            <img src="/Assets/cheap-thrills.jpg" class="card-img" />
+            <p class="card-title">Cheap Thrills</p>
+            <p class="card-info">Sia,Sean Paul</p>
           </div>
           <div class="card">
-            <img src="/Assets/card3img.jpeg" class="card-img" />
-            <p class="card-title">Top 50 - Global</p>
-            <p class="card-info">Your daily updates of most played...</p>
+            <img src="/Assets/cheque.jpg" class="card-img" />
+            <p class="card-title">Cheques</p>
+            <p class="card-info">Shubh</p>
           </div>
         </div>
 
@@ -130,15 +143,56 @@
           <div class="card">
             <img src="/Assets/card6img.jpeg" class="card-img" />
             <p class="card-title">Top Songs - India</p>
-            <p class="card-info">Badal barasa bijuli </p>
+            <p class="card-info">Your daily updates of most played...</p>
           </div>
         </div>
-        <br><br><br><br><br><br><br>
+        <div class="footer">
+          <div class="line"></div>
+        </div>
       </div>
 
-
       <!--Music Player(Bottom) -->
-      <div class="music-player">Music player</div>
+      <div class="music-player">
+        <div class="album">
+          <img src="/Assets/mahiye-jinna-sohna.jpg" class="albm-img" />
+          <section class="song-info">
+            <section class="albm-song">Mahiye Jinna Sohna</section>
+            <section class="albm-singer">Darshan Raval</section>
+          </section>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="player">
+          <div class="player-controls">
+            <img src="/Assets/player_icon1.png" class="player-control-icon" />
+            <img src="/Assets/player_icon2.png" class="player-control-icon" />
+            <img
+              src="/Assets/player_icon3.png"
+              class="player-control-icon"
+              style="opacity: 1; height: 2rem"
+            />
+            <img src="/Assets/player_icon4.png" class="player-control-icon" />
+            <img src="/Assets/player_icon5.png" class="player-control-icon" />
+          </div>
+          <div class="playback-bar">
+            <span class="current-time">00:00</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              class="progress-bar"
+            />
+            <span class="total-time">2:59</span>
+          </div>
+        </div>
+        <div class="controls">
+          <span class="material-symbols-outlined"> lyrics </span>
+          <span class="material-symbols-outlined"> cast </span>
+          <span class="material-symbols-outlined"> speaker </span>
+          <span class="material-symbols-outlined"> volume_up </span>
+          <input  type="range" min="1" max="10" step="1" />
+        </div>
+      </div>
     </div>
   </body>
 </html>
