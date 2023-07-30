@@ -24,7 +24,9 @@
     <title>Spotify - Web Player: Music for everyone</title>
   </head>
   <body>
+    <!-- Wrapper class-->
     <div class="main">
+      <!-- Sidebar -->
       <div class="sidebar">
         <div class="nav">
           <div class="nav-option" style="opacity: 1">
@@ -38,19 +40,104 @@
         </div>
         <div class="library">
           <div class="options">
-            <div class="lib-option nav-option ">
+            <div class="lib-option nav-option">
               <img src="./Assets/library_icon.png" />
               <a href="#">Your Library</a>
             </div>
             <div class="icons">
-                <i class="fa-solid fa-plus"></i>
-                <i class="fa-solid fa-arrow-right"></i>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
             </div>
           </div>
-          <div class="boxes"></div>
+          <div class="lib-box">
+            <div class="box">
+              <p class="box-p1">Create your first playlist</p>
+              <p class="box-p2">It's easy we'll help you</p>
+              <button class="badge">Create playlist</button>
+            </div>
+            <div class="box">
+              <p class="box-p1">Let's find some podcasts to follow</p>
+              <p class="box-p2">We'll keep you updated on new episodes</p>
+              <button class="badge">Browse podcasts</button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="main-content">Main content</div>
+      <!--Main Content -->
+      <div class="main-content">
+        <!--     1] Nav bar    -->
+        <div class="sticky-nav">
+          <div class="sticky-nav-arrows">
+            <img src="/Assets/backward_icon.png" />
+            <img src="/Assets/forward_icon.png" class="hide" />
+          </div>
+          <div class="sticky-nav-right">
+            <button class="badge nav-item hide">Explore Premium</button>
+            <button class="badge nav-item dark-badge">
+              <i class="fa-solid fa-download" style="margin-right: 5px"></i
+              >Install App
+            </button>
+            <i class="fa-regular fa-user nav-item"></i>
+          </div>
+        </div>
+
+        <!--   2] Cards  -->
+        <h2>Recently Played</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="/Assets/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of most played...</p>
+          </div>
+        </div>
+
+        <h2>Trending now</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="/Assets/card2img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of most played...</p>
+          </div>
+          <div class="card">
+            <img src="/Assets/card3img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of most played...</p>
+          </div>
+          <div class="card">
+            <img src="/Assets/card4img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of most played...</p>
+          </div>
+          <div class="card">
+            <img src="/Assets/card3img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of most played...</p>
+          </div>
+        </div>
+
+        <h2>Featured Charts</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="/Assets/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of most played...</p>
+          </div>
+          <div class="card">
+            <img src="/Assets/card5img.jpeg" class="card-img" />
+            <p class="card-title">Top Songs - Global</p>
+            <p class="card-info">Your daily updates of most played...</p>
+          </div>
+          <div class="card">
+            <img src="/Assets/card6img.jpeg" class="card-img" />
+            <p class="card-title">Top Songs - India</p>
+            <p class="card-info">Badal barasa bijuli </p>
+          </div>
+        </div>
+        <br><br><br><br><br><br><br>
+      </div>
+
+
+      <!--Music Player(Bottom) -->
       <div class="music-player">Music player</div>
     </div>
   </body>
