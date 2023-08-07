@@ -229,6 +229,10 @@ a{
     justify-content: center;
     align-items: center;
 }
+.heartGlow.clicked i {
+    color: green;
+  }
+  
 .about{
     width: 5%;
     height: 20px;
