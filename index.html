@@ -159,19 +159,24 @@
             <section class="albm-song">Mahiye Jinna Sohna</section>
             <section class="albm-singer">Darshan Raval</section>
           </section>
-          <div class="heartGlow" id="heartGlowID" onclick="makeLike()"><i class="fa-regular fa-heart"></i></div>
+          <button class="favorite-button" id="spotify-button">
+            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 16.36 2 12.28 2 7.77 2 4.42 4.42 2 7.77 2c1.74 0 3.41.81 4.5 2.09C13.83 2.81 15.5 2 17.24 2 20.58 2 23 4.42 23 7.77c0 4.51-3.4 8.59-8.55 12.26L12 21.35z"/>
+            </svg>
+          </button>
         </div>
         <div class="player">
           <div class="player-controls">
-            <img src="/Assets/player_icon1.png" class="player-control-icon" />
-            <img src="/Assets/player_icon2.png" class="player-control-icon" />
+            <img src="/Assets/player_icon1.png" class="player-control-icon" id="player-icon-id1"/>
+            <img src="/Assets/player_icon2.png" class="player-control-icon"id="player-icon-id2" />
             <img
               src="/Assets/player_icon3.png"
               class="player-control-icon"
               style="opacity: 1; height: 2rem"
+              id="player-icon-id3"
             />
-            <img src="/Assets/player_icon4.png" class="player-control-icon" />
-            <img src="/Assets/player_icon5.png" class="player-control-icon" />
+            <img src="/Assets/player_icon4.png" class="player-control-icon" id="player-icon-id4"/>
+            <img src="/Assets/player_icon5.png" class="player-control-icon" id="player-icon-id5"/>
           </div>
           <div class="playback-bar">
             <span class="current-time">00:00</span>
