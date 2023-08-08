@@ -130,7 +130,6 @@ function playBtn() {
     }, updateInterval);
   }
 
-
   // This function converts time in seconds to the "MM:SS" format.
   // It calculates minutes and seconds from the given timeInSeconds and returns the formatted time.
   function formatTime(timeInSeconds) {
@@ -144,3 +143,30 @@ function playBtn() {
   }
 }
 playBtn();
+
+// fun that scroll volume
+function volScroll() {
+  const scrollableInput = document.getElementById("scrollable-input");
+
+  scrollableInput.addEventListener("wheel", (event) => {
+    event.preventDefault(); // Prevent the default scroll behavior
+
+    // Determine the direction of the scroll
+    const direction = event.deltaY > 0 ? 1 : -1;
+
+    // Calculate the new value based on the scroll direction and step
+    const newValue =
+      parseInt(scrollableInput.value) +
+      direction * parseInt(scrollableInput.step);
+
+    // Ensure the new value stays within the min and max range
+    const clampedValue = Math.min(
+      parseInt(scrollableInput.max),
+      Math.max(parseInt(scrollableInput.min), newValue)
+    );
+
+    // Update the input's value
+    scrollableInput.value = clampedValue;
+  });
+}
+volScroll();
