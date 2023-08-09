@@ -261,7 +261,7 @@ a {
 }
 .player-control-icon {
   height: 1rem;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   margin-right: 1.75rem;
   opacity: 0.7;
 }
@@ -343,4 +343,5 @@ a {
   opacity: 1;
   transform: scale(1.1);
   transition: linear;
-}
+ }
+ 

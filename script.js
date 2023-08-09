@@ -67,17 +67,18 @@ function playBtn() {
   // If the audio is not playing (isPlaying is false), it starts playback from the last position and updates isPlaying accordingly. If the audio is already playing, it pauses playback and updates isPlaying.
   playerControlIcons.forEach((icon) => {
     icon.addEventListener("click", () => {
-      clearInterval(intervalId);
 
+      clearInterval(intervalId);
+      isPlaying = !isPlaying;
       playerControlIcons.forEach((otherIcon) => {
         if (otherIcon !== icon) {
           otherIcon.src = otherIcon.getAttribute("src");
         }
       });
 
-      if (!isPlaying) {
+      if (isPlaying) {
         icon.src = pauseImagePath;
-        isPlaying = true;
+        // isPlaying = true;
         startPlayback(lastPlaybackPosition); // Resume from the last position
       } else {
         icon.src = icon.getAttribute("src");
@@ -85,6 +86,7 @@ function playBtn() {
         lastPlaybackPosition =
           (timeToSeconds(totalTime) * playbackBar.value) / 100; // Store the current position
       }
+      updatePlayPauseIcon();
     });
   });
 
@@ -141,6 +143,19 @@ function playBtn() {
       .padStart(2, "0");
     return `${minutes}:${seconds}`;
   }
+
+   // This function updates the play/pause icon based on the isPlaying flag
+   function updatePlayPauseIcon() {
+    if (isPlaying) {
+      playPauseIcon.innerHTML = '<img src="/Assets/icons8-pause-64.png">';
+    } else {
+      playPauseIcon.innerHTML = '<img src="/Assets/player_icon3.png">'; // Set to the original play icon
+    }
+  }
+
+  // Call the function to set the initial play/pause icon state
+  updatePlayPauseIcon();
+
 }
 playBtn();
 
